@@ -8,4 +8,5 @@ var socket = io.connect('https://evening-wave-36315.herokuapp.com/');
 socket.emit('apiMsg', prompt('What is your nickname?') || "this user failed to put a name", prompt('What is your message') || "this user failed to put a message");
 socket.on('good', function(){
     alert("Message was sent");
+    console.log("waow it worked");
 });
