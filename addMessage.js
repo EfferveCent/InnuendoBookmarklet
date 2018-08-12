@@ -11,3 +11,11 @@ socket.on('good', function(){
     alert("Message was sent");
     console.log("waow it worked PT2");
 });
+
+
+javascript:
+var socket = io.connect('https://shrouded-everglades-59863.herokuapp.com/');
+socket.emit('message', "asdf");
+socket.on('message', (data) => {
+    alert(data);
+});
